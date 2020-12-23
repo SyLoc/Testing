@@ -1,0 +1,101 @@
+body{
+  font-family: sans-serif;
+  background-image: url(image/nen_login.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  opacity: .8s;
+}
+
+form{
+  background: #1C2833;
+  opacity: .8;
+  margin: 120px 400px;
+  padding: 20px;
+  height: 250px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+form center{
+  margin-top: 30px;
+}
+
+form center h2{
+  text-transform: uppercase;
+  color: #fff;
+}
+
+form center input{
+  background:#fff;
+  border: none;
+  border-left: 5px solid #0593f1;
+  padding: 2px 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  outline: none;
+}
+
+
+form center i{
+  color: #fff;
+  font-size: 20px;
+  background: #0593f1;
+}
+
+#check{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+span{
+  margin-top: 0;
+  font-size: 13px;
+  color: #fff;
+  padding-top: 2px;
+}
+
+a{
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+a:hover{
+  color: #0593f1;
+}
+
+button{
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+#warning{
+  color: red;
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+#lock{
+  padding: 3.5px 5px 5px 5px;
+}
+
+#icon_e{
+  padding: 3px 4px 4.5px 4px;
+}
+
+
+span a i{
+  background: none;
+  color: #0593f1;
+  margin: 10px 0px;
+  transition: 0.5;
+  transition-property: color;
+}
+
+span a i:hover{
+  color:#2471A3 ;
+}

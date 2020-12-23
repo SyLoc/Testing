@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Form Login</title>
+  <link rel="stylesheet" href="css/login_register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="assets/jquery-3.5.1.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <form class="frm_login" style="display: block;">
+    <a id="router_rigister" style="float: right;" href="#">Đăng Ký <i class="fas fa-arrow-right"></i></a>
+    <center>
+      <h2>Đăng nhập</h2>
+      <input class="form-input" type="text" placeholder="Email" id="email"><i id="icon_e" class="far fa-envelope"></i>
+      <br>
+      <input class="form-input" type="password" placeholder="Mật khẩu" id="password"><i id="lock" class="fas fa-lock"></i>
+    </center>
+    <input type="checkbox" id="check"><span>Hiện/ẩn mật khẩu</span>
+    <i id="warning" class="fas fa-info-circle"></i><a href="passwordRetrieval.html">Quên mật khẩu ?</a>
+    <center style="margin-top:10px;">
+      <!-- <span><a href=""><i class="fab fa-facebook"></i></a></span>
+      <span><a href=""><i class="fab fa-google"></i></a></span>
+      <br> -->
+      <button type="button" onclick="login();">Đăng nhập</button>
+    </center>
+  </form>
+
+  <form class="frm_rigister" style="display: none;">
+    <a id="router_login" style="float: left;" href="#"><i class="fas fa-arrow-left"></i> Đăng nhập</a>
+    <center style="margin-top: 10px;">
+      <h2 style="margin-bottom: 5px;">Đăng Ký</h2>
+      <input type="text" placeholder="Nhập email" id="email_rgt"><i id="icon_e" class="far fa-envelope"></i>
+      <br>
+      <input  type="password" placeholder="Nhập password" id="password_rgt"><i id="lock" class="fas fa-lock"></i>
+      <br>
+      <input  type="password" placeholder="Xác nhận password" oninput="CheckPass()" id="re_password_rgt"><i id="lock" class="fas fa-lock"></i>
+      <br>
+      <input type="text" placeholder="Nhập Tên" id="name"><i id="icon_e" class="far fa-envelope"></i>
+      <br>
+      <!-- <span><a href=""><i class="fab fa-facebook"></i></a></span> <span><a href=""><i class="fab fa-google"></i></a></span> -->
+      <br>
+      <button>Đăng ký</button>
+    </center>
+  </form>
+
+</body>
+  <script src="js/login_register.js"></script>
+</html>
