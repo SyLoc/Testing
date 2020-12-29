@@ -192,7 +192,6 @@ function editok(id, idsp) {
 } 
 function deletesp(idsp) {
   var r = confirm("Sản phẩm sẽ bị xóa!");
-  console.log("sua file demo");
   if (r == true) {
     // var menu = JSON.parse(localStorage.getItem("menu")) || [];
     var menu;
