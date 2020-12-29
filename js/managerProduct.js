@@ -62,8 +62,10 @@ function save() {
           });
         }
       }
+      alert("Thêm sản phẩm thành công");
       // localStorage.setItem("menu", JSON.stringify(menu));
     } else {
+      alert("Nhập tất cả thông tin của sản phẩm");
       reset();
     }
   });
@@ -187,34 +189,33 @@ function editok(id, idsp) {
     document.getElementById("edit").style.display = "block";
     document.getElementById("ok").style.display = "none";
   }
-}
+} 
 function deletesp(idsp) {
-  var r = confirm("Are you sure!");
+  var r = confirm("Sản phẩm sẽ bị xóa!");
+  console.log("sua file demo");
   if (r == true) {
     // var menu = JSON.parse(localStorage.getItem("menu")) || [];
     var menu;
-    callAPI(`products`, "GET", null).then((res) => {
-      menu = res.data;
-      var e = document.getElementById("selectCategory");
-      var category = e.options[e.selectedIndex].value;
-      for(i in menu){
-        if (menu[i].category == category) {
-          for (j in menu[i].list) {
-            if (menu[i].list[j].id == idsp) {
-                menu[i].list.splice(j, 1);
-            }
-          }
-          callAPI(`products/${menu[i].id}`, "DELETE", {
-            category: menu[i].category,
-            list: menu[i].list
-          }).then((res) => {
-            show();
-          });
-        }
-      }
-      
-      
-    });
+    // callAPI(`products`, "GET", null).then((res) => {
+    //   menu = res.data;
+    //   var e = document.getElementById("selectCategory");
+    //   var category = e.options[e.selectedIndex].value;
+    //   for(i in menu){
+    //     if (menu[i].category == category) {
+    //       for (j in menu[i].list) {
+    //         if (menu[i].list[j].id == idsp) {
+    //             menu[i].list.splice(j, 1);
+    //         }
+    //       }
+    //       callAPI(`products/${menu[i].id}`, "DELETE", {
+    //         category: menu[i].category,
+    //         list: menu[i].list
+    //       }).then((res) => {
+    //         show();
+    //       });
+    //     }
+    //   }
+    // });
   }
 }
 
